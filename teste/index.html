@@ -25,9 +25,35 @@
         }
 
     }
+
+
+    .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-pc {
+  aspect-ratio: 16 / 9;
+  width: 60%;
+}
+
+.video-cel {
+  aspect-ratio: 9 / 16;
+  width: 90%;
+}
+
 </style>
 
 
-<p align="center"><iframe class="cel" loading="lazy" src="https://www.youtube.com/embed/8lbmjZBjyU8" width="315" height="560" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<p align="center"><iframe class="cel video-cel" loading="lazy" src="https://www.youtube.com/embed/8lbmjZBjyU8" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
     <Br>
-<p align="center"><iframe class="pc" loading="lazy" src="https://www.youtube.com/embed/smHhe6_sqK4" width="1280" height="720" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<p align="center"><iframe class="pc  video-pc" loading="lazy" src="https://www.youtube.com/embed/smHhe6_sqK4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
