@@ -78,7 +78,7 @@
          border-style: solid; 
          width: 100%; padding-left: 0!important; padding-right: 0!important; 
          margin-bottom: 10px; 
-         padding: 12px 44px; border-color: #ff5535; border-width: 0px; 
+         padding: 10px 44px; border-color: #ff5535; border-width: 0px; 
          border-radius: 6px; 
          /*background: linear-gradient(to bottom, #ff6600 0%, #D0011B 100%); */
          background: linear-gradient(to bottom, #ff0000 70%, #D0011B 100%);
@@ -96,9 +96,9 @@
          display: block; 
          position: relative; 
          z-index: 1; 
-         padding: 0 15px; 
+         padding: 0 10px; 
          white-space: normal; 
-         font-size: 35px;
+         font-size: 40px;
          color: #ffffff; 
          font-family: 'Bebas Neue', cursive;
          text-shadow: #000000 0px 1px 0px;
@@ -113,7 +113,6 @@
          display: block; 
          position: relative;
          z-index: 1; 
-         margin: .2em 0 -.5em; 
          font-size: 15px; 
          color: #FFFF00; 
          font-family: Cabin; 
@@ -156,7 +155,7 @@
 
 <center>
 
-    <img src="logo.png" width="40">
+    <img src="logo.png" width="30">
 
 <h1>NOVO <font color="#FFFF00">MÉTODO DE QUEIMA²</font> PARA <font color="#FFFF00"><br>PERDER PESO</font> NO SOFÁ</h1>
 
@@ -165,7 +164,7 @@
 
 <iframe class="pc video-pc" style="border-radius: 10px"; src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<div id="botao" class="pulse delay" style="display: none; margin-top: 10px;">
+<div id="botao" class="pulse delay" style="display: none; margin-top: 5px;">
                      <a target="_blank" href="
 https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
                                               " class="a-botao" style="text-decoration: none;">
@@ -198,8 +197,27 @@ https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
 
 
 
+      <script type="text/javascript">(function(window, location) {
+         history.replaceState(null, document.title, location.pathname+"#!/ops");
+         history.pushState(null, document.title, location.pathname);
+         
+         window.addEventListener("popstate", function() {
+           if(location.hash === "#!/ops") {
+                 history.replaceState(null, document.title, location.pathname);
+                 setTimeout(function(){
 
-      <script> // passa variavel
+         location.replace("https://checkout.mycheckout.com.br/checkout/63c888bd8fa1fd0073acb0d0?src=rmkt"); 
+         
+         
+                 },0);
+           }
+         }, false);
+         }(window, location));
+      </script>
+
+
+
+<script> // passa variavel
   const mainHost = new URL(window.location);
   const mainQs = Object.fromEntries(mainHost.searchParams);
   const navLinks = document.querySelectorAll('a');
@@ -229,8 +247,10 @@ https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
          setTimeout(function() {
          $('.delay').show();
          }, 0 ); /* 423000 */
+
       </script>
 
 
          </body>
 </html>
+
