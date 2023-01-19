@@ -9,8 +9,326 @@
 
 <link rel="shortcut icon" href="logo.png">
 
-<center>
-            <iframe width="540" height="960" src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+
+<style type="text/css">
+html, body { text-align: center; padding: 0px; margin: 0px; background: #000; }
+
+.video { width: 50%; }
+
+.resolucaovideo { position: relative; width: 100%; padding-top: 56.25%; } /* 16:9 Aspect Ratio */
+
+ @media (max-width: 540px) {
+    .video {
+            width: 70%;
+        }
+.resolucaovideo { padding-top: 150%; }     
+    }
+
+        h1 {
+         font-size: clamp(1.5em, 1em + 3vw, 2.5em);
+         text-transform: uppercase bold;
+         font-family: 'Bebas Neue', cursive;
+         color: #FFF;
+         margin: 0;
+          line-height: 1;
+         }
+
+          .a-botao {
+         text-decoration: none;
+         -webkit-font-smoothing: antialiased;
+         margin: 0;
+         border: 0; 
+         font: inherit; 
+         vertical-align: baseline;
+         color: #2e82bc; 
+         outline: 0; 
+         line-height: 1; 
+         text-align: center; 
+         position:relative!important; display: inline-block!important;
+         border-style: solid; 
+         width: 100%; padding-left: 0!important; padding-right: 0!important; 
+         margin-bottom: 10px; 
+         padding: 22px 44px; border-color: #ff5535; border-width: 0px; 
+         border-radius: 6px; 
+         /*background: linear-gradient(to bottom, #ff6600 0%, #D0011B 100%); */
+         background: linear-gradient(to bottom, #ff0000 70%, #D0011B 100%);
+         box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+         text-decoration: none!important;
+         }
+         .span-botao {
+         text-decoration: none;
+         -webkit-font-smoothing: antialiased; 
+         text-align: center;
+         margin: 0; 
+         border: 0; 
+         font: inherit;
+         vertical-align: baseline;
+         display: block; 
+         position: relative; 
+         z-index: 1; 
+         padding: 0 15px; 
+         white-space: normal; 
+         font-size: 35px;
+         color: #ffffff; 
+         font-family: 'Bebas Neue', cursive;
+         text-shadow: #000000 0px 1px 0px;
+         text-decoration: none;
+         }
+         .span-botao2 {
+         -webkit-font-smoothing: antialiased; 
+         text-align: center;
+         padding: 0; border: 0;
+         font: inherit; 
+         vertical-align: baseline; 
+         display: block; 
+         position: relative;
+         z-index: 1; 
+         margin: .2em 0 -.5em; 
+         font-size: 15px; 
+         color: #FFFF00; 
+         font-family: Cabin; 
+         font-weight: bold; 
+         font-style: normal;
+         text-shadow: #000000 0px 1px 0px;
+         }
+
+.pulse {
+      animation: pulse 2s 2s ease-in-out infinite;
+      animation: pulse 2s infinite;
+      }
+      @-webkit-keyframes pulse {
+      0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      }
+      70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      }
+      100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      }
+      }
+      @keyframes pulse {
+      0% {
+      transform: scale3d(1, 1, 1);
+      }
+      50% {
+      transform: scale3d(0.95, 0.95, 0.95);
+      }
+      100% {
+      transform: scale3d(1, 1, 1);
+      } 
+   }
+
+}
 
 
-          <iframe class="pc" width="1280" height="720" src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </style>
+ 
+
+<div id="envolve" style="position: relative; width: 100%; height: 100%; background: #000;">
+
+<div id="cabecalho" style="width: 100%; height: auto; background: transparent; padding-top: 5px;">
+
+<img src="logo.png" width="50">
+</div>
+
+   <div id="titulo" style="width: 100%; height: auto; background: transparent;  padding-top: 0px;   ">
+
+   <h1>NOVO <font color="#FFFF00">MÉTODO DE QUEIMA²</font> PARA <font color="#FFFF00"><br>PERDER PESO</font> NO SOFÁ</h1>
+
+</div>
+
+
+   <center>
+
+    <div id="video" class="video" style="position: relative; height: auto; ">
+    <div id="resolucaovideo" class="resolucaovideo">
+            <div style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;">
+         <div id="youtubeEmbed" class="desktop" style="width:  100%; height: 100%; border-radius:10px;" data-video-id=""></div>     
+            </div>
+        </div>
+   </div><!--video-->
+
+
+    <div id="referencias" style="display: none; width: 100%; height: 50px; background: #444; ">referenciais  </div><!--referencias-->
+
+<div id="areabotao" class="delay" style="display:  none; width: 80%; height: auto; background: transparent; margin-top: 10px; ">
+
+<div id="botao" class="pulse">
+                     <a target="_blank" href="
+https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
+                                              " class="a-botao" style="text-decoration: none;">
+                     <span class="span-botao">COMPRAR AGORA</span>
+                     <span class="span-botao2">
+                     HOJE só 12x 29,70
+                     </span>
+                     </a>
+                  </div>
+
+</div><!--botao-->
+
+<div id="checkout" style="width: 100%; height: 50px; background: #758; display: none;">chekout  </div><!--checkout-->
+
+<div id="rodape" class="rodape" style="width: 100%; height: auto; background: transparent; bottom: 0; position: relative;">
+
+    <div style="font-family: Cabin; font-size: 10px; padding: 20px 0px 20px 0px; color: #333;">
+                  Copyright © <span id="year"></span><br>
+                  Profit
+                  <!-- Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b> Depois que você sair do
+                     Facebook, a responsabilidade não é deles e sim do nosso site. -->
+               </div>
+
+               </div>
+
+</div><!--envolve-->
+
+
+
+<script>
+// Get element
+var youtubeEmbedElement = document.getElementById("youtubeEmbed");
+
+// IDs dos vídeos
+var idDesktop = "GKWfFWVbapw";
+var idCelular = "GKWfFWVbapw";
+
+// verifica se tem video celular se nao tem usa desktop e altera resolucao
+if (idCelular == "") { 
+   var idCelular = idDesktop
+
+document.getElementById('resolucaovideo').style.paddingTop = '56.25%';
+
+}
+
+// se tela pequena mostra um video, se nao outro
+
+ var x = window.matchMedia("(max-width: 700px)");  
+ if (x.matches) {
+
+var videoId = idCelular; // video celular X1YsTMijxGg
+}
+else {
+  var videoId = idDesktop; //video desktop cwn4CaWjkAo
+
+
+
+}
+
+
+// Add YouTube API script
+var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+// var videoId = youtubeEmbedElement.dataset.videoId;
+var startSeconds = 165;
+var endSeconds = 210;
+
+onYouTubeIframeAPIReady = function () {
+  player = new YT.Player("youtubeEmbed", {
+    videoId: videoId, // YouTube Video ID
+    playerVars: {
+      autoplay: 0, // Auto-play the video on load
+      autohide: 1, // Hide video controls when playing
+      disablekb: 1,
+      controls: 1, // Hide pause/play buttons in player
+      showinfo: 0, // Hide the video title
+      modestbranding: 1, // Hide the Youtube Logo
+      loop: 1, // Run the video in a loop
+      fs: 0, // Hide the full screen button
+      rel: 0,
+      enablejsapi: 1,
+
+cc_load_policy: 1,
+      start: startSeconds,
+      end: endSeconds
+    },
+    events: {
+      onReady: function (e) {
+        e.target.mute();
+        e.target.playVideo();
+      },
+      onStateChange: function (e) {
+        if (e.data === YT.PlayerState.PLAYING) {
+          document.getElementById("youtubeEmbed").classList.add("loaded");
+        }
+
+        if (e.data === YT.PlayerState.ENDED) {
+          // Loop from starting point
+          player.seekTo(startSeconds); 
+        }
+      }
+    }
+  });
+};
+
+</script>
+
+
+<script type="text/javascript">(function(window, location) {
+         history.replaceState(null, document.title, location.pathname+"#!/ops");
+         history.pushState(null, document.title, location.pathname);
+         
+         window.addEventListener("popstate", function() {
+           if(location.hash === "#!/ops") {
+                 history.replaceState(null, document.title, location.pathname);
+                 setTimeout(function(){
+
+         location.replace("https://checkout.mycheckout.com.br/checkout/63c888bd8fa1fd0073acb0d0?src=rmkt"); 
+         
+         
+                 },0);
+           }
+         }, false);
+         }(window, location));
+      </script>
+      <script>
+         (function() {
+              const utmParamQueryString = new URLSearchParams(window.location.search);
+              if (utmParamQueryString.toString()) {
+                   var navLinks = document.querySelectorAll('a');
+                   navLinks.forEach(function(item) {
+                        if (item.href.indexOf('checkout.mycheckout.com.br') !== -1) {
+                             if (item.href.indexOf('?') === -1) {
+                                  item.href += '?' + utmParamQueryString.toString();
+                             } else {
+                                  item.href += '&' + utmParamQueryString.toString();
+                             }
+                        }
+                   });
+              }
+         })();
+      </script>
+      <script src="https://checkout-prd-api.mycheckout.com.br/api/v1/scripts/inject-cookie.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!--     
+               <script language="JavaScript">
+                  window.onbeforeunload = confirmExit;
+                  function confirmExit(){
+                      alert("ATENÇÃO");
+                      return false;
+                  }
+               </script>
+         -->
+      <script>
+         /* ano */
+         var date = new Date();
+         var year = date.getFullYear();
+         console.log(year);
+         document.getElementById('year').innerHTML = year;
+      </script>
+      <script>document.addEventListener("contextmenu", e => e.preventDefault());</script>
+
+
+      <script>
+         $('.delay').hide();
+         setTimeout(function() {
+         $('.delay').show();
+         }, 3430 ); /* 423000 */
+      </script>
