@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+<title>PRO-FIT</title>
+
+<link rel="shortcut icon" href="logo.png">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+
+<link rel=”dns-prefetch” href=”https://youtube.com” data-set-by="SG Optimizer"/>
+
+<style>
+
+    body { background: #000; }
+
+    .pc {
+            display: block;
+        }
+            .cel {
+            display: none;
+        }
+
+#botao { width: 60%;  }
+
+ @media (max-width: 540px) {
+    .cel {
+            display: block;
+        }
+
+        .pc {
+            display: none;
+        }
+
+#botao { width: 90%;  }
+
+    }
+
+
+.video-pc {
+  aspect-ratio: 16 / 9;
+  width: 60%;
+}
+
+.video-cel {
+  aspect-ratio: 9 / 16;
+  width: 75%;
+}
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.box {
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+
+h2, .box p {
+  margin: 0 20px;
+}
+
+
+ h1 {
+         font-size: clamp(1.5em, 1em + 3vw, 2.5em);
+         text-transform: uppercase bold;
+         font-family: 'Bebas Neue', cursive;
+         color: #FFF;
+         margin: 0;
+          line-height: 1;
+         }
+
+
+ .a-botao {
+         text-decoration: none;
+         -webkit-font-smoothing: antialiased;
+         margin: 0;
+         border: 0; 
+         font: inherit; 
+         vertical-align: baseline;
+         color: #2e82bc; 
+         outline: 0; 
+         line-height: 1; 
+         text-align: center; 
+         position:relative!important; display: inline-block!important;
+         border-style: solid; 
+         width: 100%; padding-left: 0!important; padding-right: 0!important; 
+         margin-bottom: 10px; 
+         padding: 10px 44px; border-color: #ff5535; border-width: 0px; 
+         border-radius: 6px; 
+         /*background: linear-gradient(to bottom, #ff6600 0%, #D0011B 100%); */
+         background: linear-gradient(to bottom, #ff0000 70%, #D0011B 100%);
+         box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+         text-decoration: none!important;
+         }
+         .span-botao {
+         text-decoration: none;
+         -webkit-font-smoothing: antialiased; 
+         text-align: center;
+         margin: 0; 
+         border: 0; 
+         font: inherit;
+         vertical-align: baseline;
+         display: block; 
+         position: relative; 
+         z-index: 1; 
+         padding: 0 0px; 
+         white-space: normal; 
+         font-size: 40px;
+         color: #ffffff; 
+         font-family: 'Bebas Neue', cursive;
+         text-shadow: #000000 0px 1px 0px;
+         text-decoration: none;
+         }
+         .span-botao2 {
+         -webkit-font-smoothing: antialiased; 
+         text-align: center;
+         padding: 0; border: 0;
+         font: inherit; 
+         vertical-align: baseline; 
+         display: block; 
+         position: relative;
+         z-index: 1; 
+         font-size: 15px; 
+         color: #FFFF00; 
+         font-family: Cabin; 
+         font-weight: bold; 
+         font-style: normal;
+         text-shadow: #000000 0px 1px 0px;
+         margin-top: -5px;
+         }
+
+.pulse {
+      animation: pulse 2s 2s ease-in-out infinite;
+      animation: pulse 2s infinite;
+      }
+      @-webkit-keyframes pulse {
+      0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      }
+      70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      }
+      100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      }
+      }
+      @keyframes pulse {
+      0% {
+      transform: scale3d(1, 1, 1);
+      }
+      50% {
+      transform: scale3d(0.95, 0.95, 0.95);
+      }
+      100% {
+      transform: scale3d(1, 1, 1);
+      } 
+   }
+
+}
+</style>
+
+
+
+
+<center>
+
+    <img src="logo.png" width="35">
+
+<h1>NOVO <font color="#FFFF00">MÉTODO DE QUEIMA²</font> PARA <font color="#FFFF00"><br>PERDER PESO</font> NO SOFÁ</h1>
+
+<div style="width:80%; height: 57px; background: #ff0000; opacity: 1; z-index:2; margin-bottom: -57px; position:relative;"></div>
+
+<iframe class="cel video-cel" style="border-radius: 10px"; src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe class="pc video-pc" style="border-radius: 10px"; src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="width:80%; height: 43px; background: #ff0000; opacity: 1; z-index:2; margin-top: -43px; position:relative;"></div>
+
+
+<div id="botao" class="pulse delay" style="display: none; margin-top: 5px;">
+                     <a target="_blank" href="
+https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
+                                              " class="a-botao" style="text-decoration: none;">
+                     <span class="span-botao">COMPRAR AGORA</span>
+                     <span class="span-botao2">
+                     HOJE só 12x 29,70
+                     </span>
+                     </a>
+                  </div>
+
+   <div style="font-family: Cabin; font-size: 10px; padding: 20px 0px 5px 0px; color: #333;">
+                  Copyright © <span id="year"></span> Profit
+                  <!-- Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b> Depois que você sair do
+                     Facebook, a responsabilidade não é deles e sim do nosso site. -->
+               </div>
+
+
+
+<script>document.addEventListener("contextmenu", e => e.preventDefault());</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+   <script>
+         /* ano */
+         var date = new Date();
+         var year = date.getFullYear();
+         console.log(year);
+         document.getElementById('year').innerHTML = year;
+      </script>
+
+
+<script type="text/javascript">(function(window, location) {
+         history.replaceState(null, document.title, location.pathname+"#!/ops");
+         history.pushState(null, document.title, location.pathname);
+         
+         window.addEventListener("popstate", function() {
+           if(location.hash === "#!/ops") {
+                 history.replaceState(null, document.title, location.pathname);
+                 setTimeout(function(){
+
+         location.replace("https://checkout.mycheckout.com.br/checkout/63c888bd8fa1fd0073acb0d0?src=rmkt"); 
+         
+         
+                 },0);
+           }
+         }, false);
+         }(window, location));
+      </script>
+
+
+<script> // passa variavel
+  const mainHost = new URL(window.location);
+  const mainQs = Object.fromEntries(mainHost.searchParams);
+  const navLinks = document.querySelectorAll('a');
+
+  const pagePriority = false;
+
+  if (mainQs && navLinks) {
+    navLinks.forEach((item) => {
+      let navUrl = false;
+      try { navUrl = new URL(item.href); } catch (error) { navUrl = false; }
+
+      if (navUrl) {
+        const navQs = Object.fromEntries(navUrl.searchParams);
+        let newQs = { ...navQs, ...mainQs };
+        if (pagePriority) { newQs = { ...mainQs, ...navQs }; }
+
+        navUrl.search = new URLSearchParams(newQs);
+        item.href = navUrl.href;
+      }
+    });
+  }
+</script>
+
+
+      <script>
+         $('.delay').hide();
+         setTimeout(function() {
+         $('.delay').show();
+         }, 0 ); /* 423000 */
+
+      </script>
+
+
+         </body>
+</html>
+
