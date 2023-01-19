@@ -50,7 +50,7 @@
 
 .video-cel {
   aspect-ratio: 9 / 16;
-  width: 90%;
+  width: 80%;
 }
 
  h1 {
@@ -161,9 +161,9 @@
 <h1>NOVO <font color="#FFFF00">MÉTODO DE QUEIMA²</font> PARA <font color="#FFFF00"><br>PERDER PESO</font> NO SOFÁ</h1>
 
 
-<iframe class="cel video-cel" loading="lazy" src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="cel video-cel" style="border-radius: 10px"; src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe class="pc  video-pc" loading="lazy" src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="pc video-pc" style="border-radius: 10px"; src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div id="botao" class="pulse delay" style="display: none; margin-top: 10px;">
                      <a target="_blank" href="
@@ -195,9 +195,42 @@ https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
       <script>document.addEventListener("contextmenu", e => e.preventDefault());</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+      <script> // passa variavel
+  const mainHost = new URL(window.location);
+  const mainQs = Object.fromEntries(mainHost.searchParams);
+  const navLinks = document.querySelectorAll('a');
+
+  const pagePriority = false;
+
+  if (mainQs && navLinks) {
+    navLinks.forEach((item) => {
+      let navUrl = false;
+      try { navUrl = new URL(item.href); } catch (error) { navUrl = false; }
+
+      if (navUrl) {
+        const navQs = Object.fromEntries(navUrl.searchParams);
+        let newQs = { ...navQs, ...mainQs };
+        if (pagePriority) { newQs = { ...mainQs, ...navQs }; }
+
+        navUrl.search = new URLSearchParams(newQs);
+        item.href = navUrl.href;
+      }
+    });
+  }
+</script>
+
+
       <script>
          $('.delay').hide();
          setTimeout(function() {
          $('.delay').show();
          }, 0 ); /* 423000 */
       </script>
+
+
+         </body>
+</html>
