@@ -14,12 +14,16 @@
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet">
 
 <link rel=”dns-prefetch” href=”https://youtube.com” data-set-by="SG Optimizer"/>
 
 <style>
 
-    body { background: #000; }
+
+    body { background: #06070B; margin:0; }
+
+
 
     .pc {
             display: block;
@@ -29,6 +33,9 @@
         }
 
 #botao { width: 60%;  }
+
+
+.topo { max-width:60%; margin: 0; height: 60px; }
 
  @media (max-width: 540px) {
     .cel {
@@ -40,6 +47,8 @@
         }
 
 #botao { width: 90%;  }
+
+.topo { max-width:100%; padding-left: 10px; padding-right: 10px; }
 
     }
 
@@ -110,7 +119,11 @@ h2, .box p {
          padding: 10px 44px; border-color: #ff5535; border-width: 0px; 
          border-radius: 6px; 
          /*background: linear-gradient(to bottom, #ff6600 0%, #D0011B 100%); */
-         background: linear-gradient(to bottom, #ff0000 70%, #D0011B 100%);
+        /* background: linear-gradient(to bottom, #ff0000 70%, #D0011B 100%);*/
+
+        background:linear-gradient(268deg, #810404, #e33501, #810404, #e33501);background-size:800% 800%;-webkit-animation:cta 6s ease infinite;-moz-animation:cta 6s ease infinite;-o-animation:cta 6s ease infinite;animation:cta 6s ease infinite;box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-webkit-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-moz-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-o-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);border-bottom:inset 1.5px rgba(0,0,0,0.3);
+
+
          box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
          text-decoration: none!important;
          }
@@ -151,7 +164,7 @@ h2, .box p {
          margin-top: -5px;
          }
 
-.pulse {
+.pulsex {
       animation: pulse 2s 2s ease-in-out infinite;
       animation: pulse 2s infinite;
       }
@@ -181,25 +194,56 @@ h2, .box p {
 }
 </style>
 
+<style>
+
+
+
+
+.call_to_action_red{display:block;box-sizing:border-box;text-transform:uppercase;padding:20px 10px;width:60%;
+    margin:0px auto;text-align:center;font-size:24px;line-height:36px;font-weight:bold;
+
+    font-family:'Roboto Condensed', 'Arial', sans-serif;
+
+    color:#fff;border-radius:5px;background:linear-gradient(268deg, #810404, #e33501, #810404, #e33501);background-size:800% 800%;-webkit-animation:cta 6s ease infinite;-moz-animation:cta 6s ease infinite;-o-animation:cta 6s ease infinite;animation:cta 6s ease infinite;box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-webkit-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-moz-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-o-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);border-bottom:inset 1.5px rgba(0,0,0,0.3)}.call_to_action_red:hover{color:#fff !important;background-color:#db1313}@-webkit-keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@-moz-keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@-o-keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}.call_to_action_green{background:linear-gradient(315deg, #08775a, #1bcb9b, #08775a, #1bcb9b);background-size:500% 500%;-webkit-animation:cta2 6s ease infinite;-moz-animation:cta2 6s ease infinite;-o-animation:cta2 6s ease infinite;animation:cta2 6s ease infinite;margin:27px 0 0 auto;padding:12px 20px;display:table;text-transform:uppercase;width:initial;text-decoration:none;font-size:18px;padding:10px 10px;border-radius:2px;border-bottom:inset 1.5px rgba(0,0,0,0.3);font-weight:bold;text-transform:none;color:#fff}.call_to_action_green:hover,.call_to_action_green:focus{color:#fff !important;background:#1bcb9b !important;text-decoration:underline}@-webkit-keyframes cta2{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@-moz-keyframes cta2{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@-o-keyframes cta2{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@keyframes cta2{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}:root{--mainColor: #ffca4d;--secundaryColor: #d7a124;--btnsColor: #ffca4d;--bgDefault: #000;--space: 0 auto 1.6rem;--mSpace: 0 auto 3rem;--defaultSpace: 1rem;--fwBolder: 700;--fwNormal: 300}.targe{width:100%;background:#000;padding:10px}.targe p{font-size:0.7em;line-height:0.9rem;margin:0;color:#fff;text-align:center}.showModal{cursor:pointer}.modal{width:100%;height:0;position:fixed;z-index:10000000;visibility:hidden}.modalOverlay{background-color:rgba(0,0,0,0.8);position:absolute;top:0;left:0;width:100%;height:100%}.modal .modalContent{width:90vw;max-width:480px;height:auto;background:#fff;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);padding:15px;border-radius:4px;text-align:center;box-sizing:border-box}.modal .modalContent .titleForm{color:#333;font-size:1.4em;line-height:normal;margin:0px 0px 20px 0}.modal .modalContent form{width:100%}.modal .modalContent form input{width:100%;height:auto;font-size:1.4em;font-family:inherit;font-weight:var(--fwNormal);padding:12px;box-sizing:border-box;color:#333;background:rgba(0,0,0,0);background-repeat:no-repeat;background-size:22px auto;background-position:0px;border-bottom:0.5px solid #333;margin:0 8px 0 0;display:block}.modal .modalContent form fieldset input{padding:12px 12px 12px 0}.modal .modalContent .iconEmail{background-image:url(https://lp1.empiricus.com.br/assets/svgs-default/email-black.svg);padding:12px 12px 12px 30px}.modal .modalContent form p{color:#000}
+
+</style>
+
+
+
+
+
+  <!--  <img src="logo.png" width="35"> -->
+
+<div style="width:100%;  background: #0A0C13; ">
+    <center>
+    <div class="topo">
+    <img style="float: left; padding-top: 10px;" src="logo.png">
+    <img style="float:  right; padding-top: 19px;" src="sino.png">
+</div>
+
+
+
+
+</div>
 
 
 
 <center>
 
-    <img src="logo.png" width="35">
 
-<h1>NOVO <font color="#FFFF00">MÉTODO DE QUEIMA²</font> PARA <font color="#FFFF00"><br>PERDER PESO</font> NO SOFÁ</h1>
+<!-- <h1>NOVO <font color="#FFFF00">MÉTODO DE QUEIMA²</font> PARA <font color="#FFFF00"><br>PERDER PESO</font> NO SOFÁ</h1> -->
 
-<div style="width:80%; height: 57px; background: #ff0000; opacity: 1; z-index:2; margin-bottom: -57px; position:relative;"></div>
+<div style="padding-top: 10px; width:90%; height: 57px; background: transparent; opacity: 1; z-index:2; margin-bottom: -57px; z-index: 1000; position: relative;"></div>
 
-<iframe class="cel video-cel" style="border-radius: 10px"; src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="cel video-cel" style="border-radius: 0px"; src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe class="pc video-pc" style="border-radius: 10px"; src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="pc video-pc" style="z-index: -1; border-radius: 0px"; src="https://www.youtube.com/embed/GKWfFWVbapw?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1" title="PLAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<div style="width:80%; height: 43px; background: #ff0000; opacity: 1; z-index:2; margin-top: -43px; position:relative;"></div>
+<div style="width:90%; height: 43px; background: transparent; opacity: 1; z-index:2; margin-top: -43px; position:relative;"></div>
 
 
-<div id="botao" class="pulse delay" style="display: none; margin-top: 5px;">
+
+<div id="botao" class="pulse delay" style="display: none; margin-top: 10px;">
                      <a target="_blank" href="
 https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
                                               " class="a-botao" style="text-decoration: none;">
@@ -210,7 +254,7 @@ https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
                      </a>
                   </div>
 
-   <div style="font-family: Cabin; font-size: 10px; padding: 20px 0px 5px 0px; color: #333;">
+   <div style="font-family: 'Roboto Condensed', 'Arial', sans-serif; font-size: 14px; padding: 20px 0px 20px 0px; color: #999;">
                   Copyright © <span id="year"></span> Profit
                   <!-- Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b> Depois que você sair do
                      Facebook, a responsabilidade não é deles e sim do nosso site. -->
