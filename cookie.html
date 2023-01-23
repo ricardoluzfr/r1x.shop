@@ -28,8 +28,13 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);
+    
+          document.write("<h1>tem cookie</h1>");
+
+
   } else {
+
+          document.write("<h1>gravar cookie</h1>");
 
        setCookie("username", user, 30);
      }
@@ -37,6 +42,8 @@ function checkCookie() {
 
 </script>
 </head>
+
+
 
 <body onload="checkCookie()"></body>
 
