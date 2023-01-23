@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>PRO-FIT</title>
-      <link rel="shortcut icon" href="logo.png">
+      <link rel="shortcut icon" href="r.png">
       <link rel="preconnect" href="https://fonts.googleapis.com/">
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -195,7 +195,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<a href="https://google.com">testa</a>
 
 
 <script>
@@ -243,7 +242,7 @@
 
                <script>
 function backquente(){
-    var back_redirect_back_link = 'https://checkout.mycheckout.com.br/checkout/63c888bd8fa1fd0073acb0d0?src=rmkt';
+    var back_redirect_back_link = 'https://checkout.mycheckout.com.br/checkout/63c888bd8fa1fd0073acb0d0?src=saida';
     history['pushState']({}, '', location['href']);
     history['pushState']({}, '', location['href']);
     window['onpopstate'] = function() {
@@ -292,10 +291,10 @@ function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
        $('.delay').show();
-         /* document.write("<h1>tem cookie</h1>"); */
+         document.write("<h1>tem cookie</h1>");
   } else {
 
-/* document.write("<h1>gravar cookie</h1>");*/
+ document.write("<h1>gravar cookie</h1>");
  document.cookie = "username=ok;";
 
      }
