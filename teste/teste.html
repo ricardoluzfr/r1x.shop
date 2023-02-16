@@ -26,8 +26,8 @@
    font-weight:400;
    height: 50px;
    line-height: 50px;
- background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(31,30,30,1) 85%);
+   background: rgb(0,0,0);
+   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(31,30,30,1) 85%);
    color: #212529;
 }
 
@@ -120,7 +120,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(31,30,30,1) 85%);
 
 
 <div class="top">
-<span style="float: left; padding-left:20px; font-family: 'Bebas Neue', cursive;  font-size: 35px; color: #ffffff;">PROFIT | Coma Tudo e Emagreça</span>
+<span style="float: left; padding-left:20px; font-family: 'Bebas Neue', cursive;  font-size: 35px; color: #fed500;">PROFIT</span>
 </div>
 
 <!--
@@ -138,8 +138,10 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(31,30,30,1) 85%);
 
 <div class="footer">
 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <div id="botao" class="delay pulse" style="margin-top: 0px;"> 
+
+    <div id="botao" class="delay" style="margin-top: 0px;"> 
       <a target="_blank" href="
          https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
          " class="a-botao" style="text-decoration: none;">
@@ -151,6 +153,15 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(31,30,30,1) 85%);
    </div>
 
 </div>
+
+
+   <script>
+      $('.delay').hide();
+      setTimeout(function() {
+      $('.delay').show();
+      }, 5000 ); /* 424800 */         
+   </script>
+
 
 </body>
 </html>
