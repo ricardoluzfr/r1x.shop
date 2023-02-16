@@ -159,7 +159,7 @@
       $('.delay').hide();
       setTimeout(function() {
       $('.delay').show();
-      }, 426000 ); /* 426000 /         
+      }, 15000 ); /* 426000 */
    </script>
 
 
@@ -241,10 +241,10 @@
         let user = getCookie("username");
         if (user != "") {
              $('.delay').show();
-               /*document.write("<h1>tem cookie</h1>");*/
+               document.write("<h1>tem cookie</h1>");
         } else {
       
-       /*document.write("<h1>gravar cookie</h1>");*/
+       document.write("<h1>gravar cookie</h1>");
        document.cookie = "username=ok;";
       
            }
