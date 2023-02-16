@@ -159,8 +159,99 @@
       $('.delay').hide();
       setTimeout(function() {
       $('.delay').show();
-      }, 426000 ); /* 426000 */         
+      }, 426000 ); /* 426000 /         
    </script>
+
+
+   <script>document.addEventListener("contextmenu", e => e.preventDefault());</script>
+
+
+ <script>
+      /* ano */
+      var date = new Date();
+      var year = date.getFullYear();
+      console.log(year);
+      document.getElementById('year').innerHTML = year;
+   </script>
+   <script>
+      const mainHost = new URL(window.location);
+      const mainQs = Object.fromEntries(mainHost.searchParams);
+      const navLinks = document.querySelectorAll('a');
+      
+      const pagePriority = false;
+      
+      if (mainQs && navLinks) {
+        navLinks.forEach((item) => {
+          let navUrl = false;
+          try { navUrl = new URL(item.href); } catch (error) { navUrl = false; }
+      
+          if (navUrl) {
+            const navQs = Object.fromEntries(navUrl.searchParams);
+            let newQs = { ...navQs, ...mainQs };
+            if (pagePriority) { newQs = { ...mainQs, ...navQs }; }
+      
+            navUrl.search = new URLSearchParams(newQs);
+            item.href = navUrl.href;
+          }
+        });
+      }
+   </script>
+
+   <script>
+      function backquente(){
+          var back_redirect_back_link = 'https://checkout.mycheckout.com.br/checkout/63c888bd8fa1fd0073acb0d0?src=saida';
+          history['pushState']({}, '', location['href']);
+          history['pushState']({}, '', location['href']);
+          window['onpopstate'] = function() {
+          setTimeout(function() {
+              location['href'] = back_redirect_back_link
+          }, 1)
+          }
+      }
+      setTimeout("backquente()", 1000);
+   </script>
+
+
+
+     <script>
+      function setCookie(cname,cvalue,exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+      
+      function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+      
+      function checkCookie() {
+        let user = getCookie("username");
+        if (user != "") {
+             $('.delay').show();
+               /*document.write("<h1>tem cookie</h1>");*/
+        } else {
+      
+       /*document.write("<h1>gravar cookie</h1>");*/
+       document.cookie = "username=ok;";
+      
+           }
+        }
+      
+   </script>
+
 
 
 </body>
