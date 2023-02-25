@@ -13,9 +13,9 @@
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet">
 
 
-            <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js"></script>
+<script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
       <!-- Meta Pixel Code Maria -->
       <script>
@@ -58,6 +58,7 @@
       </script>
       <style>
          * { margin: 0; font-family: 'Bebas Neue', cursive; }
+
          .top {
           font-family: 'Bebas Neue', cursive;
          position: relative;
@@ -68,12 +69,22 @@
          font-family: 'Open Sans', sans-serif;
          font-weight:400;
          height: 50px;
-         line-height: 50px;
-         background: #FFF;
+         line-height: 50px;   
          color: #212529;
          padding-top: 5px;
                  }
-         .footer {
+
+                   #mybutton {
+    opacity: 0;
+    display: none;
+  }
+
+  #mybutton.ShowMeButton {
+    opacity: 1;
+    display: block;
+  }
+
+           .footer {
          position: fixed;
          left: 0;
          bottom: 0;
@@ -85,7 +96,7 @@
          /*background: #fed500;*/
          color: #212529;
          }
-         .video { width: 300px; }
+         .video { width: 300px; height:530px; }
          .a-botao {
          text-decoration: none;
          -webkit-font-smoothing: antialiased;
@@ -105,9 +116,10 @@
          border-radius: 0px; 
          /*background: linear-gradient(to bottom, #ff6600 0%, #D0011B 100%); */
          /* background: linear-gradient(to bottom, #ff0000 70%, #D0011B 100%);*/
-         background:linear-gradient(268deg, #810404, #e33501, #810404, #e33501);background-size:800% 800%;-webkit-animation:cta 6s ease infinite;-moz-animation:cta 6s ease infinite;-o-animation:cta 6s ease infinite;animation:cta 6s ease infinite;box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-webkit-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-moz-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-o-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);border-bottom:inset 1.5px rgba(0,0,0,0.3);
+        /* background:linear-gradient(268deg, #810404, #e33501, #810404, #e33501);background-size:800% 800%;-webkit-animation:cta 6s ease infinite;-moz-animation:cta 6s ease infinite;-o-animation:cta 6s ease infinite;animation:cta 6s ease infinite;box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-webkit-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-moz-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-o-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);border-bottom:inset 1.5px rgba(0,0,0,0.3);
          -webkit-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-moz-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-o-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);border-bottom:inset 1.5px rgba(0,0,0,0.3)}.call_to_action_red:hover{color:#fff !important;background-color:#db1313}@-webkit-keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@-moz-keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@-o-keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}.call_to_action_green{background:linear-gradient(315deg, #08775a, #1bcb9b, #08775a, #1bcb9b);background-size:500% 500%;-webkit-animation:cta2 6s ease infinite;-moz-animation:cta2 6s ease infinite;-o-animation:cta2 6s ease infinite;animation:cta2 6s ease infinite;margin:27px 0 0 auto;padding:12px 20px;display:table;text-transform:uppercase;width:initial;text-decoration:none;font-size:18px;padding:10px 10px;border-radius:2px;border-bottom:inset 1.5px rgba(0,0,0,0.3);font-weight:bold;text-transform:none;color:#fff;
-         box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+         box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); */
+         background: #1a73e8;
          text-decoration: none!important;
          }
          .span-botao {
@@ -147,33 +159,46 @@
          margin-top: -5px;
          }
          @media (max-width: 540px) {
-         .video { width:90%; }
+       .video { width: 350px; height:630px; }
          }
       </style>
    </head>
-   <body style="background: #FFF;" onload="checkCookie()"></body>
+   <body style="background: /*#202023;*/ #F00;" onload="checkCookie()"></body>
    <div class="top">
-      <span style="font-family: 'Bebas Neue', cursive; color: #212529; cursor: normal;">
-         <h1>EMAGREÇA NO SOFÁ <u>COM</u> A PROFIT</h1>
+      <span style="font-family: 'Bebas Neue', cursive; color: #FFFFFF; cursor: normal;">
+         <h1><u>NOVO</u> MÉTODO PROFIT EMAGRECEDOR</h1>
       </span>
    </div>
    <center>
-   <div class="video" style="border: 6px solid #FF0000;">
 
 
-    <div id="wistia_6o42qjtv0n"></div>
-    <script>
-      wistiaEmbed = Wistia.embed("6o42qjtv0n", {
-        videoFoam: true,
+<div class="wistia_embed wistia_async_6o42qjtv0n video" style="border: 5px solid #FFF;">&nbsp;</div>
+
+<script>
+  window._wq = window._wq || [];
+  // target our video by the first 3 characters of the hashed ID
+  _wq.push({
+    id: "6o42qjtv0n",
+    onReady: function(video) {
+      // at 300 seconds (5min x 60 = 300), do something amazing
+      video.bind('secondchange', function(s) {
+        if (s >= 424,8) {
+          // Insert code to do something amazing here
+          // console.log("We just reached " + s + " seconds!");
+          $("#mybutton").addClass("ShowMeButton");
+        }
       });
-    </script>
+    }
+  });
+
+</script>
 
 
 
       <div style="width: 100%; margin-top: -50px; background: transparent; height: 50px; position: relative;"></div>
    </div>
-   <div class="footer delay" style="display: none;"> <!--   -->
-      <div id="botao" style="margin-top: 0px;"> 
+   <div id="mybutton" class="footer" style=""> <!--   -->
+      <div style="margin-top: 0px;"> 
          <a target="_blank" href="
             https://checkout.mycheckout.com.br/checkout/63c886001278c20048b4e09f
             " class="a-botao" style="text-decoration: none;">
@@ -185,7 +210,7 @@
       </div>
    </div>
    <script>document.addEventListener("contextmenu", e => e.preventDefault());</script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
    <script>
       /* ano */
       var date = new Date();
@@ -266,6 +291,7 @@
       function checkCookie() {
         let user = getCookie("username");
         if (user != "") {
+            $("#mybutton").addClass("ShowMeButton");
              $('.delay').show();
                /*document.write("<h1>tem cookie</h1>");*/
         } else {
