@@ -12,22 +12,117 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="./assets/css/com.css">
 
     <!-- Título da Página -->
-    <title>Protocolo Zero Barriga</title>
+    <title>RIX</title>
     
     <style type="text/css">
       header {
         color: white;
-        background-image: url("assets/img/bg.jpeg");
-        background-color: rgba(0, 0, 0, 0.6);
+        background-image: url("fundo.jpeg");
+        /*background-color: rgba(0, 0, 0, 0.6);*/
+        background-color: #000000;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
         background-blend-mode: darken;
       }
+
+.botao {
+         text-decoration: none;
+         -webkit-font-smoothing: antialiased;
+         margin: 0;
+         border: 0; 
+         font: inherit; 
+         vertical-align: baseline;
+         color: #2e82bc; 
+         outline: 0; 
+         line-height: 1; 
+         text-align: center; 
+         position:relative!important; display: inline-block!important;
+         border-style: solid; 
+         width: 100%; padding-left: 0!important; padding-right: 0!important; 
+         margin-bottom: 10px; 
+         padding: 20px 44px; border-color: #ff5535; border-width: 0px; 
+         border-radius: 6px; 
+         /*background: linear-gradient(to bottom, #ff6600 0%, #D0011B 100%); */
+         /* background: linear-gradient(to bottom, #ff0000 70%, #D0011B 100%);*/
+         background:linear-gradient(268deg, #810404, #e33501, #810404, #e33501);background-size:800% 800%;-webkit-animation:cta 6s ease infinite;-moz-animation:cta 6s ease infinite;-o-animation:cta 6s ease infinite;animation:cta 6s ease infinite;box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-webkit-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-moz-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-o-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);border-bottom:inset 1.5px rgba(0,0,0,0.3);
+         -webkit-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-moz-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);-o-box-shadow:0px 1px 7px 0px rgba(0,0,0,0.75);border-bottom:inset 1.5px rgba(0,0,0,0.3)}.call_to_action_red:hover{color:#fff !important;background-color:#db1313}@-webkit-keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@-moz-keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@-o-keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}@keyframes cta{0%{background-position:0% 50%}50%{background-position:100% 51%}100%{background-position:0% 50%}}.call_to_action_green{background:linear-gradient(315deg, #08775a, #1bcb9b, #08775a, #1bcb9b);background-size:500% 500%;-webkit-animation:cta2 6s ease infinite;-moz-animation:cta2 6s ease infinite;-o-animation:cta2 6s ease infinite;animation:cta2 6s ease infinite;margin:27px 0 0 auto;padding:12px 20px;display:table;text-transform:uppercase;width:initial;text-decoration:none;font-size:18px;padding:10px 10px;border-radius:2px;border-bottom:inset 1.5px rgba(0,0,0,0.3);font-weight:bold;text-transform:none;color:#fff;
+         box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+         text-decoration: none!important;
+         }
+         .span-botao {
+         text-decoration: none;
+         -webkit-font-smoothing: antialiased; 
+         text-align: center;
+         margin: 0; 
+         border: 0; 
+         font: inherit;
+         vertical-align: baseline;
+         display: block; 
+         position: relative; 
+         z-index: 1; 
+         padding: 0 0px; 
+         white-space: normal; 
+         font-size: 40px;
+         color: #ffffff; 
+         font-family: 'Montserrat', sans-serif;
+         text-transform: uppercase;
+         font-weight: bold;
+         text-shadow: #000000 0px 1px 0px;
+         text-decoration: none;
+         }
+         .span-botao2 {
+         -webkit-font-smoothing: antialiased; 
+         text-align: center;
+         padding: 0; border: 0;
+         font: inherit; 
+         vertical-align: baseline; 
+         display: block; 
+         position: relative;
+         z-index: 1; 
+         font-size: 15px; 
+         color: #FFFF00; 
+         font-family: 'Montserrat', sans-serif;
+         
+         font-style: normal;
+         text-shadow: #000000 0px 1px 0px;
+         margin-top: 5px;
+         }
+         .pulse {
+         animation: pulse 2s 2s ease-in-out infinite;
+         animation: pulse 2s infinite;
+         }
+         @-webkit-keyframes pulse {
+         0% {
+         -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+         }
+         70% {
+         -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+         }
+         100% {
+         -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+         }
+         }
+         @keyframes pulse {
+         0% {
+         transform: scale3d(1, 1, 1);
+         }
+         50% {
+         transform: scale3d(0.95, 0.95, 0.95);
+         }
+         100% {
+         transform: scale3d(1, 1, 1);
+         } 
+         }
+         }
     </style>
+
+
     
     <!-- Meta Pixel Code -->
   
@@ -40,30 +135,28 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <!-- Imagem Ultrasecreto -->
-            <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
+            <!-- logo-->
+            <img class="img-fluid" src="logo.png" style="max-width: 80px;">
 
             <!-- Headline -->
             <h3 class="my-4"><b>6 ingredientes Simples Que Fazem O Corpo Queimar Até 13Kg Em 30 Dias</b></h3>
 
-            <!-- VSL -->
+            <!-- video -->
        
-
-
        <style>.embed-container { border-radius: 6px; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/b66vSptOJso?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&hl=pt&cc_lang_pref=pt&cc_load_policy=1' frameborder='0' allowfullscreen></iframe></div>
 
 
+      <div id="botao" class="pulse delay" style="margin-top: 10px;">
+      <a href="
+        https://sun.eduzz.com/2136650
+         " class="botao" style="text-decoration: none;">
+      <span class="span-botao">QUERO ACESSAR AGORA</span>
+      <span class="span-botao2">
+      HOJE só 12x 29,70
+      </span>
+      </a>
+   </div>
 
-            <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/HkrDVPl" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
 
     <section class="comments py-4">
@@ -432,19 +525,28 @@
               </div>
             </div>
             <!-- Botão 2 -->
-            <div id="cta2" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/HkrDVPl" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
-              </a>
-            </div>
+           
+
+
+      <div id="botao" class="pulse delay" style="margin-top: 20px;">
+      <a href="
+        https://sun.eduzz.com/2136650
+         " class="botao" style="text-decoration: none;">
+      <span class="span-botao">QUERO ACESSAR AGORA</span>
+      <span class="span-botao2">
+      HOJE só 12x 29,70
+      </span>
+      </a>
+   </div>
+
+
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-dark py-3 text-center">
-      <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+    <footer class="py-3 text-center" style="background: #000000;">
+      <div class="text-white"><a target="blank_" href="termos.html" class="text-white">Termos de Uso</a> | <a target="blank_" href="privacidade.html" class="text-white">Política de Privacidade</a></div>
     </footer>
 
     <script type="text/javascript">
@@ -457,3 +559,6 @@
     <script src="./assets/js/com.js"></script>
   </body>
 </html>
+
+
+
