@@ -138,12 +138,12 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <!-- logo-->
-            <!-- <img class="img-fluid" src="logo.png" style="max-width: 80px;"> -->
+            <img class="img-fluid" src="logo.png" style="max-width: 80px;">
 
             <!-- Headline -->
-           <h1 class="my-4" style="font-family: 'Montserrat', sans-serif;">
+           <h3 class="my-4" style="font-family: 'Montserrat', sans-serif;">
             <b>Como Ganhar Uma </b><font color="#E8B56C"><b>Nova Renda</b></font> <br><b>Trabalhando Menos</b>
-          </h1>
+          </h3>
 
 
 
@@ -552,13 +552,31 @@
       </div>
     </section>
 
-    <footer class="py-3 text-center" style="background: #000000;">
+    <footer class="py-3 text-center" style="background: #000000; font-size: 13px;">
+   
+       <div style="font-family: 'Roboto Condensed', 'Arial', sans-serif; font-size: 14px; padding: 20px 0px 20px 0px; color: #999;">
+      Copyright © <span id="year"></span>
+      <!-- Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b> Depois que você sair do
+         Facebook, a responsabilidade não é deles e sim do nosso site. -->
+   </div>
+
       <div class="text-white"><a target="blank_" href="termos.html" class="text-white">Termos de Uso</a> | <a target="blank_" href="privacidade.html" class="text-white">Política de Privacidade</a></div>
     </footer>
 
     <script type="text/javascript">
       setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 2000); // temporização da Call to Action (em milissegundos)
     </script>
+
+
+
+   <script>
+      /* ano */
+      var date = new Date();
+      var year = date.getFullYear();
+      console.log(year);
+      document.getElementById('year').innerHTML = year;
+   </script>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
