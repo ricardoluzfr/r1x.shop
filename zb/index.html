@@ -34,8 +34,15 @@
 
   h1 { font-family: 'Montserrat', sans-serif;
    font-size: clamp(1.5em, 1em + 3vw, 2.5em);
+   padding: 0;
+margin: 0;
     }
 
+      h2 { font-family: 'Montserrat', sans-serif;
+   font-size: 1.5em; 
+   padding: 10px;
+margin: 0;    
+    }
            .a-botao {
          text-decoration: none;
          -webkit-font-smoothing: antialiased;
@@ -129,8 +136,13 @@
 <center>
 <h1>Novo Método Paga 
 <br>
-Até <!-- font color="#E8B56C"--><u>R$ 1.000</u></font> No Celular
+Até <u>R$ 1.000</u></font> No Celular
 </h1>
+
+<h2>
+<font color="#E8B56C">xxxxxxxxx</font>
+</h2>
+
 </center>
 
 
@@ -204,7 +216,7 @@ document.addEventListener('dblclick', function(event) {
       $('.delay').hide();
       setTimeout(function() {
       $('.delay').show();
-      }, 10000 ); /* 192000 */         
+      }, 5000 ); /* 192000 */         
    </script>
 
    <script>
@@ -246,6 +258,7 @@ document.addEventListener('dblclick', function(event) {
       
    </script>
 
+<!--
          <script>document.addEventListener("contextmenu", e => e.preventDefault());</script>
          
                <script language="JavaScript">
@@ -255,7 +268,7 @@ document.addEventListener('dblclick', function(event) {
                       return false;
                   }
                </script>     
-     
+     -->
       <script>
       const mainHost = new URL(window.location);
       const mainQs = Object.fromEntries(mainHost.searchParams);
